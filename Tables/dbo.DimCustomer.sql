@@ -28,7 +28,8 @@ CREATE TABLE [dbo].[DimCustomer]
 [CompanyName] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 [ETLLoadID] [int] NULL,
 [LoadDate] [datetime] NULL,
-[UpdateDate] [datetime] NULL
+[UpdateDate] [datetime] NULL,
+[twitter] [nchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
 ) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[DimCustomer] ADD CONSTRAINT [PK_DimCustomer_CustomerKey] PRIMARY KEY CLUSTERED  ([CustomerKey]) ON [PRIMARY]
